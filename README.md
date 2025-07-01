@@ -32,23 +32,4 @@ A **real-time group chat application** built using **Spring Boot**, **WebSocket*
 ---
 
 ## 📁 Project Structure
-spring-boot-websocket/
-│
-├── config/
-│ ├── WebSocketConfig.java # WebSocket setup with STOMP & SockJS
-│ └── WebSocketEventListener.java # Handles user disconnect events
-│
-├── controller/
-│ └── ChatController.java # Chat endpoints for join/send
-│
-├── model/
-│ └── ChatMessage.java # Message model (JOIN, CHAT, LEAVE)
-│
-├── resources/
-│ ├── static/
-│ │ ├── js/main.js # Handles frontend connection logic
-│ │ └── css/ # Add CSS styling as needed
-│ └── templates/index.html # Main UI page
-│
-├── pom.xml # Maven config file
-└── application.properties # Spring Boot config
+<pre> spring-boot-websocket/ ├── config/ │ ├── WebSocketConfig.java # WebSocket setup with STOMP & SockJS │ └── WebSocketEventListener.java # Handles disconnect events │ ├── controller/ │ └── ChatController.java # Handles chat register/send endpoints │ ├── model/ │ └── ChatMessage.java # Model representing chat messages │ ├── resources/ │ ├── static/ │ │ ├── js/ │ │ │ └── main.js # WebSocket & STOMP frontend logic │ │ └── css/ # Custom styles (if any) │ └── templates/ │ └── index.html # Main HTML page │ ├── application.properties # Spring Boot application config ├── pom.xml # Maven build configuration └── README.md </pre>
